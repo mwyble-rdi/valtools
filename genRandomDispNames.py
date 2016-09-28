@@ -1,0 +1,108 @@
+from random import shuffle
+
+COL_A = ["Green",
+"Greener",
+"Chronic",
+"Canna",
+"Holistic",
+"Healing",
+"Herbal",
+"Therapeutic",
+"Medical",
+"Medicinal",
+"Doctor's",
+"Patient's",
+"Alternative",
+"Integrative",
+"Compassionate",
+"Caring",
+"Sharing",
+"Natural",
+"Nature's",
+"Organic",
+"Healthy",
+"Holistic",
+"Growing",
+"Verde",
+"Cascade",
+"Cascadia",
+"Mt. Hood",
+"Portland",
+"Portlandia",
+"Potlandia",
+"Oregon",
+"420"]
+
+shuffle(COL_A)
+
+COL_B = ["Green",
+"Chronic",
+"Cure",
+"Comfort",
+"Cannabis",
+"Bud",
+"Marijuana",
+"Leaf",
+"Herb",
+"Weed",
+"Seed",
+"Management",
+"Caregivers",
+"Remedy",
+"Pain",
+"Relief",
+"Nature",
+"Cure",
+"Care",
+"Caregivers",
+"Health",
+"Wellness",
+"Medicine",
+"Meds",
+"Prescription",
+"Garden",
+"Hemp",
+"Stash",
+"Kind"]
+
+shuffle(COL_B)
+
+COL_C = ["Greenery",
+"Garden",
+"Center",
+"Institute",
+"Spa",
+"Lounge",
+"Clinic",
+"Club",
+"Community",
+"Connection",
+"Collective",
+"Co-op",
+"Choice",
+"Concepts",
+"University",
+"Home",
+"House",
+"Room",
+"Service",
+"Mart",
+"Shop",
+"Shoppe",
+"Place",
+"Apothecary",
+"Farmacy",
+"Pharmacy",
+"Remedy",
+"Inc.",
+"LLC.",
+"Dispensary"]
+
+shuffle(COL_C)
+
+with open("gen_disp_names.txt", 'w') as f:
+    for p1 in COL_A:
+        for p2 in COL_B:
+            for p3 in COL_C:
+                f.write("%s %s %s\n"%(p1, p2, p3))
+
